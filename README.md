@@ -14,8 +14,10 @@ Objective-C, XCode 8, iOS 9+
 ## Code Example
 
 1. Add TopTabBarViewController class and Button Bar class to your project.
-2. Create UIViewController in Storyboard and set TopTabBarViewController class as a subclass.
-3. 
+2. Create UIViewController in Storyboard.
+3. Add a Container and set TopTabBarViewController class as a subclass.
+3. This is an example of the code you have to add in the ViewController (in prepareForSegue method).
+
 ```objectivec
     if ([segue.identifier isEqualToString:@"toTopTabBarViewController"]) {
         
@@ -23,6 +25,7 @@ Objective-C, XCode 8, iOS 9+
         
         topTabBarViewController.view.backgroundColor = [UIColor clearColor];
         
+        //These are the child view controllers that you are going to add to the TopTabBarViewController. You can add the viewcontroller title programmatically or in the Storyboard. 
         UIViewController *greenViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"greenViewController"];
         UIViewController *redViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"redViewController"];
         
