@@ -57,4 +57,8 @@ fastlane/screenshots
 # After new code Injection tools there's a generated folder /iOSInjectionProject
 # https://github.com/johnno1962/injectionforxcode
 
+<<<<<<< HEAD
 iOSInjectionProject/
+=======
+iOSInjectionProject/
+>>>>>>> d6c771d4c667f5d407879c4643c96b6543183c20
